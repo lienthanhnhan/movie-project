@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Movies React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Movies is a React application that allows users to browse currently playing movies, view details about each movie, and search for movies using The Movie Database (TMDb) API.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- View a list of movies currently playing in theaters.
+- Switch between Now Playing and Top Rated movies.
+- Search for movies using the search bar.
+- View detailed information about each movie.
+- Responsive design for an optimal user experience.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ReactJS with TypeScript
+- SCSS for styling
+- React Router for navigation
+- Axios for API requests
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+```bash
+|-- src
+| |-- components
+| | |-- MovieList
+| | |-- MovieListItem
+| | |-- MovieDetails
+| | |-- ...
+| |-- services
+| | |-- movieApiService.ts
+| | |-- movieService.ts
+| |-- typings
+| | |-- movie.d.ts
+| | |-- movieDetails.d.ts
+| |-- App.tsx
+| |-- index.tsx
+|-- public
+| |-- images
+|-- README.md
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/lienthanhnhan/movie-project.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
 
-### `npm run eject`
+    ```bash
+    cd movies-project
+    npm install
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Run the app:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm start
+    ```
+    The app will be available at http://localhost:3000.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Video Walkthrough
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Check out this video walkthrough to see the Movies React App in action:
 
-## Learn More
+[![Movies React App Walkthrough](public/images/demo.png)](https://www.loom.com/share/19f4ebd99cea465fbee0160b6f78b894)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### API Key
+This project uses The Movie Database (TMDb) API. You need to obtain an API key by creating an account on the TMDb website and following their API documentation.
 
-### Code Splitting
+### License
+Copyright 2024 lienthanhnhan
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-### Analyzing the Bundle Size
+    http://www.apache.org/licenses/LICENSE-2.0
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.

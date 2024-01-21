@@ -1,0 +1,26 @@
+.tab-bar {
+  display: flex;
+  background-color: #0070f3;
+  padding: 10px 10px 0 10px;
+  border-bottom: 2px solid white;
+
+  .tab-item {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #0059c2;
+    }
+
+    &.active {
+      background-color: white;
+      color: black;
+    }
+  }
+}

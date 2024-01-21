@@ -1,0 +1,60 @@
+.movie-container {
+  position: relative;
+  transition: opacity 0.5s ease-in-out;
+  &.loading {
+    opacity: 0.5;
+  }
+}
+
+.container {
+  padding: 0 30px;
+  .header-bar {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    .grid-item {
+      text-decoration: none;
+      color: inherit;
+      .movie-item {
+        height: 380px;
+        .movie-poster {
+          display: flex;
+          max-height: 250px;
+          align-self: center;
+        }
+        .movie-details {
+          .overview {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .list-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    .movie-item {
+      display: flex;
+      width: 90%;
+      margin: 15px auto;
+      .movie-poster {
+        max-width: 20%;
+        align-self: center;
+      }
+
+      .movie-details {
+        padding: 20px;
+      }
+    }
+  }
+}

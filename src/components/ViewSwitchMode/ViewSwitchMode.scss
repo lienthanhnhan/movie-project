@@ -1,0 +1,18 @@
+.view-switcher {
+  display: inline-flex;
+  flex-wrap: nowrap;
+
+  button {
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    font-size: 14px;
+
+    &.active {
+      background-color: #b2ecfc;
+    }
+  }
+}
